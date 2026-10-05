@@ -1,0 +1,17 @@
+{
+  "universe_usage_history": [
+    {
+      "universe": "Gravity Falls",
+      "assigned_at": "2026-10-05T16:31:03.354-04:00"
+    }
+  ],
+  "assignment_cast_snapshots": {
+    "5e906aab-bda9-44ad-97c3-b65fef9c7485": {
+      "universe": "Gravity Falls",
+      "assigned_at": "2026-10-05T16:31:03.354-04:00",
+      "members": ["Stan", "Dipper", "Mabel", "Soos"]
+    }
+  },
+  "transaction_id": "5e906aab-bda9-44ad-97c3-b65fef9c7485",
+  "registry_revision": 2
+}
