@@ -1,14 +1,30 @@
-.wrapper {
+.heading {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.empty,
+.error {
   padding: 2rem 1rem;
   text-align: center;
-  color: #444;
-}
-
-.wrapper h1 {
-  margin-bottom: 0.5rem;
-}
-
-.note {
   color: #666;
-  margin-bottom: 1.5rem;
+}
+
+.error {
+  color: #a33;
+}
+
+.emptyTitle {
+  font-size: 1.25rem;
+  color: #444;
+  margin: 0 0 0.5rem;
+}
+
+.emptyHint {
+  margin: 0 0 1.5rem;
 }

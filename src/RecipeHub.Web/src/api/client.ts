@@ -120,6 +120,17 @@ export const apiClient = {
 
   getSharedRecipe: (token: string): Promise<RecipeDetail> =>
     request<RecipeDetail>(`/api/shared/${encodeURIComponent(token)}`),
+
+  listFavorites: (): Promise<Recipe[]> => request<Recipe[]>('/api/favorites'),
+
+  addFavorite: (recipeId: number): Promise<Recipe> =>
+    request<Recipe>('/api/favorites', jsonInit('POST', { recipeId })),
+
+  removeFavorite: (recipeId: number): Promise<void> =>
+    request<void>(`/api/favorites/${recipeId}`, {
+      method: 'DELETE',
+      parseJson: false,
+    }),
 };
 
 export type ApiClient = typeof apiClient;

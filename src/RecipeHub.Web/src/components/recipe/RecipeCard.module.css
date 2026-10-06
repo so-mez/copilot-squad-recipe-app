@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+}
+
+.card {
+  height: 100%;
+}
+
+.title {
+  display: block;
+  padding-right: 3.5rem;
+}
+
+.favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.description {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  color: #666;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+}

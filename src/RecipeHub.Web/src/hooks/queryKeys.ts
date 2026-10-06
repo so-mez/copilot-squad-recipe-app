@@ -12,6 +12,12 @@ export const tagKeys = {
   all: ['tags'] as const,
 };
 
+export const favoriteKeys = {
+  all: ['favorites'] as const,
+  list: () => [...favoriteKeys.all, 'list'] as const,
+  mutation: () => [...favoriteKeys.all, 'toggle'] as const,
+};
+
 export const shareKeys = {
   byToken: (token: string) => ['shared', token] as const,
 };

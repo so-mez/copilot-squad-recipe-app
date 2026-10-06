@@ -11,4 +11,10 @@ export { useSearch } from './useSearch';
 export type { UseSearchArgs } from './useSearch';
 export { useTimer } from './useTimer';
 export type { UseTimerResult } from './useTimer';
-export { recipeKeys, tagKeys, shareKeys } from './queryKeys';
+export {
+  useFavorites,
+  useFavoriteIds,
+  useToggleFavorite,
+} from './useFavorites';
+export type { ToggleFavoriteVariables } from './useFavorites';
+export { recipeKeys, tagKeys, shareKeys, favoriteKeys } from './queryKeys';
